@@ -3,7 +3,8 @@ package com.finaxis.account.rest;
 import com.finaxis.account.model.Account;
 import com.finaxis.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AccountController {
@@ -18,21 +19,5 @@ public class AccountController {
     public int createAccount(Account account) {
         return accountService.saveAccountDetails(account);
     }
-
-    @PutMapping("/account")
-    public int updateAccount(Account account) {
-        return accountService.modifyAccountDetails(account);
-    }
-
-    @GetMapping("/account/{accountId}")
-    public Account getAccountDetails(int accountId) {
-        return accountService.getAccountDetails(accountId);
-    }
-
-    @DeleteMapping("/account/{accountId}")
-    public int deleteAccountDetails(int accountId) {
-        return accountService.deleteAccountDetails(accountId);
-    }
-
 
 }

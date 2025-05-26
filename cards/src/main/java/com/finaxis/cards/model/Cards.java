@@ -1,4 +1,4 @@
-package com.finaxis.account.model;
+package com.finaxis.cards.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,23 +7,24 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Getter @Setter
-public class Account {
+public class Cards {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int accountId;
-
-    private long accountNumber;
-
-    private String name;
-
-    private String email;
-
-    private int age;
-
-    private String address;
+    private int cardId;
 
     private long cardNumber;
+
+    private String cardType;
+
+    private int cvv;
+
+    private LocalDate issuedData;
+
+    private LocalDate expiryDate;
+
 }
