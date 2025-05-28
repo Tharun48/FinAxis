@@ -1,8 +1,10 @@
 package com.finaxis.account.rest;
 
 import com.finaxis.account.model.Account;
+import com.finaxis.account.model.CardDetailsDTO;
 import com.finaxis.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -24,15 +26,14 @@ public class AccountController {
         return accountService.modifyAccountDetails(account);
     }
 
-    @GetMapping("/account/{accountId}")
-    public Account getAccountDetails(int accountId) {
-        return accountService.getAccountDetails(accountId);
+
+
+    @GetMapping("/account/{accountRef}")
+    public ResponseEntity<CardDetailsDTO> fecthCardDetailsOfUser(int accountRef) {
+        CardDetailsDTO cardDetailsDTO = accountService.fecthCardDetailsOfUser(accountRef);
+        return ResponseEntity.ok(cardDetailsDTO);
     }
 
-    @DeleteMapping("/account/{accountId}")
-    public int deleteAccountDetails(int accountId) {
-        return accountService.deleteAccountDetails(accountId);
-    }
 
 
 }

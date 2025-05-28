@@ -27,4 +27,6 @@ public class Cards {
 
     private LocalDate expiryDate;
 
+    private long accountNumber;
+
 }

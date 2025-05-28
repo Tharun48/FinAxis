@@ -4,6 +4,9 @@ import com.finaxis.cards.model.Cards;
 import com.finaxis.cards.repository.CardsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 @Service
 public class CardsServiceImpl implements CardsService{
 
@@ -37,5 +40,10 @@ public class CardsServiceImpl implements CardsService{
     @Override
     public Cards getCards(int cardId) {
         return cardsRepository.findByCardId(cardId);
+    }
+
+    @Override
+    public List<Cards> getCardsByAccountNumber(long accountNumber) {
+        return cardsRepository.findByAccountNumber(accountNumber);
     }
 }
