@@ -1,0 +1,19 @@
+server:
+    port: 9092
+spring:
+  application:
+    name: message-service
+  cloud:
+    function:
+      definition: accountDetails|accountNumber
+    stream:
+      bindings:
+          accountDetails-in-0:
+            destination: account-details
+            group: ${spring.application.name}
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: tharun
+    password: tharun
+    connection-timeout: 10s

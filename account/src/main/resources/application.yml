@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: account
+  datasource:
+    url: jdbc:postgresql://localhost:5432/finaxis
+    username: tharun
+    password: tharun
+  jpa:
+    hibernate:
+      ddl-auto: update
