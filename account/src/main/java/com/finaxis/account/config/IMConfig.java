@@ -11,5 +11,6 @@ public class IMConfig {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+    //comment
 
 }
