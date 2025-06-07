@@ -83,7 +83,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
