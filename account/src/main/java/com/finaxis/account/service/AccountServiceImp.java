@@ -38,6 +38,7 @@ public class AccountServiceImp implements AccountService {
         AccountDTO accountDTO = new AccountDTO(account.getAccountId(),account.getAccountNumber(),
                 account.getAddress(),account.getAge(),account.getCardNumber(),account.getEmail(),account.getName());
         var result = streamBridge.send("send-communication-out-0", accountDTO);
+        //event published
         log.info("Is event published " + result);
     }
     @Override
