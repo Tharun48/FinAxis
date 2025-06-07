@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="" />
+    <list default="true" id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="widget status check">
+      <changelist_data name="Tharun Reddy" email="tharun" automatic="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tharun Reddy &lt;tharun&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -52,6 +59,11 @@
       <updated>1749231569596</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'main' of https://github.com/Tharun48/FinAxis&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit." />
+    <MESSAGE value="widget status check" />
+    <option name="LAST_COMMIT_MESSAGE" value="widget status check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
