@@ -1,6 +1,6 @@
 spring:
   application:
-    name: account
+    name: cards
   datasource:
     url: jdbc:postgresql://localhost:5432/finaxis
     username: postgres
@@ -9,18 +9,17 @@ spring:
     hibernate:
       ddl-auto: update
   cloud:
-    function:
-      definition: cardDetails
     stream:
       bindings:
-        send-communication-out-0:
-          destination: send-communication
-        cardDetails-in-0:
+        card-details-out-0:
           destination: card-details
-          group: ${spring.application.name}
+          content-type: application/json
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
     connection-timeout: 10s
+
+server:
+  port: 8081
