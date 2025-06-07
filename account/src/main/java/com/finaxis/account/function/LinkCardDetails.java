@@ -18,7 +18,7 @@ public class LinkCardDetails {
     private static final Logger log = LoggerFactory.getLogger(LinkCardDetails.class);
     private final AccountRepository accountrepository;
     private final AccountService accountService;
-    //dependency of function has to be added only we use want to define
+    //dependency of function has to be added only we use want to define or it can be supplier
     @Bean
     public Function<CardDetailsDTO,Long> cardDetails(){
         return cardDetailsDTO -> {
