@@ -6,7 +6,7 @@ spring:
     name: loans
   datasource:
     url: jdbc:postgresql://localhost:5432/finaxis
-    username: tharun
+    username: postgres
     password: tharun
   jpa:
     hibernate:

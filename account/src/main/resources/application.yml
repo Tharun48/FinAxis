@@ -3,8 +3,19 @@ spring:
     name: account
   datasource:
     url: jdbc:postgresql://localhost:5432/finaxis
-    username: tharun
+    username: postgres
     password: tharun
   jpa:
     hibernate:
       ddl-auto: update
+  cloud:
+    stream:
+      bindings:
+        send-communication-out-0:
+          destination: send-communication
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s

@@ -1,33 +1,45 @@
 package com.finaxis.account.service;
 
 import com.finaxis.account.model.Account;
+import com.finaxis.account.model.AccountDTO;
 import com.finaxis.account.model.CardDTO;
 import com.finaxis.account.model.CardDetailsDTO;
 import com.finaxis.account.repository.AccountRepository;
+import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.TreeMap;
 
 @Service
+@AllArgsConstructor
 public class AccountServiceImp implements AccountService {
 
-    AccountRepository accountRepository;
-    RestTemplate restTemplate;
+    private final AccountRepository accountRepository;
+    private final RestTemplate restTemplate;
+    private final StreamBridge streamBridge;
+    private final Logger log = LoggerFactory.getLogger(AccountServiceImp.class);
 
-    @Autowired
-    AccountServiceImp(AccountRepository accountRepository,RestTemplate restTemplate) {
-        this.accountRepository = accountRepository;
-        this.restTemplate=restTemplate;
-    }
+
 
     @Override
     public int saveAccountDetails(Account account) {
         Account savedAccount = accountRepository.save(account);
+        Account_Publish(savedAccount);
         return savedAccount.getAccountId();
     }
 
+    private void Account_Publish(Account account) {
+        AccountDTO accountDTO = new AccountDTO(account.getAccountId(),account.getAccountNumber(),
+                account.getAddress(),account.getAge(),account.getCardNumber(),account.getEmail(),account.getName());
+        var result = streamBridge.send("send-communication-out-0", accountDTO);
+        log.info("Is event published " + result);
+    }
     @Override
     public int modifyAccountDetails(Account account) {
         Account savedAccount = accountRepository.save(account);
