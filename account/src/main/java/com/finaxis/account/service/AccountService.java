@@ -8,5 +8,5 @@ public interface AccountService {
     int modifyAccountDetails(Account account);
     int deleteAccountDetails(int accountId);
     Account getAccountDetails(int accountId);
-    CardDetailsDTO fecthCardDetailsOfUser(int accountRef);
+    CardDetailsDTO fecthCardDetailsOfUser(long accountRef);
 }

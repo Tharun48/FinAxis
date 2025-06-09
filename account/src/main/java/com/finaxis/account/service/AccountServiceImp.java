@@ -60,14 +60,17 @@ public class AccountServiceImp implements AccountService {
     }
 
     @Override
-    public CardDetailsDTO fecthCardDetailsOfUser(int accountRef) {
+    public CardDetailsDTO fecthCardDetailsOfUser(long accountRef) {
         Account account = accountRepository.findByAccountNumber(accountRef);
-        ArrayList list = restTemplate.getForObject("http://localhost:8081/cards/account/147258369", ArrayList.class);
-        CardDTO cardDTO = restTemplate.getForObject("http://localhost:8081/cards/1", CardDTO.class);
-        System.out.println("list =  "+list);
-        System.out.println("card-dto =  "+cardDTO);
-        CardDetailsDTO cardDetailsDTO = new CardDetailsDTO(account.getAccountId(),account.getAccountNumber(),account.getAddress(),
-                account.getAge(),account.getCardNumber(),account.getEmail(),account.getName(),list,cardDTO);
-        return cardDetailsDTO;
+        if(account!=null) {
+            ArrayList list = restTemplate.getForObject("http://localhost:8081/cards/account/147258369", ArrayList.class);
+            CardDTO cardDTO = restTemplate.getForObject("http://localhost:8081/cards/1", CardDTO.class);
+            System.out.println("list =  "+list);
+            System.out.println("card-dto =  "+cardDTO);
+            CardDetailsDTO cardDetailsDTO = new CardDetailsDTO(account.getAccountId(),account.getAccountNumber(),account.getAddress(),
+                    account.getAge(),account.getCardNumber(),account.getEmail(),account.getName(),list,cardDTO);
+            return cardDetailsDTO;
+        }
+        return null;
     }
 }

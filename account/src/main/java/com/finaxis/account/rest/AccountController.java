@@ -29,7 +29,7 @@ public class AccountController {
 
 
     @GetMapping("/account/{accountRef}")
-    public ResponseEntity<CardDetailsDTO> fecthCardDetailsOfUser(int accountRef) {
+    public ResponseEntity<CardDetailsDTO> fecthCardDetailsOfUser(@PathVariable long accountRef) {
         CardDetailsDTO cardDetailsDTO = accountService.fecthCardDetailsOfUser(accountRef);
         return ResponseEntity.ok(cardDetailsDTO);
     }
