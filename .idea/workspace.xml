@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="widget status check">
       <changelist_data name="Tharun Reddy" email="tharun" automatic="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/config/IMConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/model/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/exception/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/model/ExceptionHandlerResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/rest/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/rest/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/service/AccountServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/service/AccountServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
