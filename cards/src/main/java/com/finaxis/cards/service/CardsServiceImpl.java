@@ -42,7 +42,7 @@ public class CardsServiceImpl implements CardsService{
 
     private void publishCardDetails(Cards cards){
         log.info("message publish started");
-        var result = streamBridge.send("card-details",cards);
+        var result = streamBridge.send("card-details-link",cards);
         log.info("event published " +result);
     }
 

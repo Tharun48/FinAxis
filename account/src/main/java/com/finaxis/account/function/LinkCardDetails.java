@@ -21,6 +21,7 @@ public class LinkCardDetails {
     //dependency of function has to be added only we use want to define or it can be supplier
     @Bean
     public Function<CardDetailsDTO,Long> cardDetails(){
+        log.info("tharun");
         return cardDetailsDTO -> {
             long accountNumber = cardDetailsDTO.accountNumber();
             Account account = accountrepository.findByAccountNumber(accountNumber);
@@ -29,4 +30,5 @@ public class LinkCardDetails {
             return cardDetailsDTO.cardNumber();
         };
     }
+
 }
