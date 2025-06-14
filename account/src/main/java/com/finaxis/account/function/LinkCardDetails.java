@@ -31,4 +31,16 @@ public class LinkCardDetails {
         };
     }
 
+    @Bean
+    public Function<CardDetailsDTO,Long> cardDetails1(){
+        log.info("tharun");
+        return cardDetailsDTO -> {
+            long accountNumber = cardDetailsDTO.accountNumber();
+            Account account = accountrepository.findByAccountNumber(accountNumber);
+            account.setCardNumber(cardDetailsDTO.cardNumber());
+            accountService.modifyAccountDetails(account);
+            return cardDetailsDTO.cardNumber();
+        };
+    }
+
 }

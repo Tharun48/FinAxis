@@ -7,12 +7,8 @@
     <list default="true" id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="widget status check">
       <changelist_data name="Tharun Reddy" email="tharun" automatic="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,21 +118,6 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/rest/CardsRestController.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/account/src/main/java/com/finaxis/account/service/AccountServiceImp.java</url>
           <line>63</line>
           <option name="timeStamp" value="16" />
@@ -145,6 +126,16 @@
           <url>file://$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java</url>
           <line>25</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cards/src/main/java/com/finaxis/cards/service/CardsServiceImpl.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

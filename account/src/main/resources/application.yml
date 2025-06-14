@@ -10,13 +10,16 @@ spring:
       ddl-auto: update
   cloud:
     function:
-      definition: cardDetails
+      definition: cardDetails; cardDetails1
     stream:
       bindings:
         send-communication-out-0:
           destination: send-communication
         cardDetails-in-0:
           destination: card-details-link
+          group: ${spring.application.name}
+        cardDetails1-in-0:
+          destination: card-details-1
           group: ${spring.application.name}
       kafka:
         binder:
