@@ -24,3 +24,7 @@ spring:
       kafka:
         binder:
           brokers: localhost:9092
+
+server:
+  servlet:
+    context-path: /account

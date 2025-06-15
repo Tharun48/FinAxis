@@ -1,10 +1,14 @@
 package com.finaxis.account.rest;
 
 import com.finaxis.account.model.Account;
+import com.finaxis.account.model.AccountDTO;
+import com.finaxis.account.model.AccountWrapperDTO;
 import com.finaxis.account.model.CardDetailsDTO;
 import com.finaxis.account.service.AccountService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,7 +21,7 @@ public class AccountController {
     }
 
     @PostMapping("/account")
-    public int createAccount(Account account) {
+    public int createAccount(@RequestBody @Valid Account account) {
         return accountService.saveAccountDetails(account);
     }
 
@@ -32,6 +36,12 @@ public class AccountController {
     public ResponseEntity<CardDetailsDTO> fecthCardDetailsOfUser(@PathVariable long accountRef) {
         CardDetailsDTO cardDetailsDTO = accountService.fecthCardDetailsOfUser(accountRef);
         return ResponseEntity.ok(cardDetailsDTO);
+    }
+
+
+    @PostMapping("/account-details")
+    public int createAccountDummy(@RequestBody @Valid AccountWrapperDTO account) {
+        return 1;
     }
 
 

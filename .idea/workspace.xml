@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="widget status check">
       <changelist_data name="Tharun Reddy" email="tharun" automatic="false" />
+      <change afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/model/AccountWrapperDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/function/LinkCardDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/model/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/model/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/rest/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/com/finaxis/account/rest/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -39,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CardsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MessageApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/development/localRepo/FinAxis&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountApplication.executor": "Debug",
+    "Application.CardsApplication.executor": "Debug",
+    "Application.MessageApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/development/localRepo/FinAxis"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ddc5b7dc-6737-489f-ab4c-7de0789799f0" name="Changes" comment="" />
