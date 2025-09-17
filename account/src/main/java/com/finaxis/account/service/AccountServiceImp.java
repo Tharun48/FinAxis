@@ -63,12 +63,12 @@ public class AccountServiceImp implements AccountService {
     public CardDetailsDTO fecthCardDetailsOfUser(long accountRef) {
         Account account = accountRepository.findByAccountNumber(accountRef);
         if(account!=null) {
-            ArrayList list = restTemplate.getForObject("http://localhost:8081/cards/account/147258369", ArrayList.class);
-            CardDTO cardDTO = restTemplate.getForObject("http://localhost:8081/cards/1", CardDTO.class);
+            String url = "http://localhost:8081/cards/account/";
+            url+=accountRef;
+            ArrayList list = restTemplate.getForObject(url, ArrayList.class);
             System.out.println("list =  "+list);
-            System.out.println("card-dto =  "+cardDTO);
             CardDetailsDTO cardDetailsDTO = new CardDetailsDTO(account.getAccountId(),account.getAccountNumber(),account.getAddress(),
-                    account.getAge(),account.getCardNumber(),account.getEmail(),account.getName(),list,cardDTO);
+                    account.getAge(),account.getCardNumber(),account.getEmail(),account.getName(),list);
             return cardDetailsDTO;
         }
         return null;

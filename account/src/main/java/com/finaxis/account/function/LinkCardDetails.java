@@ -19,6 +19,12 @@ public class LinkCardDetails {
     private final AccountRepository accountrepository;
     private final AccountService accountService;
     //dependency of function has to be added only we use want to define or it can be supplier
+    //pattern to the lambda expression...
+    /*
+    (input parameter1, input parameter2) ->{
+	    //logic goes here...
+    }
+     */
     @Bean
     public Function<CardDetailsDTO,Long> cardDetails(){
         log.info("tharun");

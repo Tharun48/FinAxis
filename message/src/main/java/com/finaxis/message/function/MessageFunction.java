@@ -16,7 +16,15 @@ public class MessageFunction {
     @Bean
     public Function<AccountDTO,AccountDTO> accountDetails(){
         return accountDTO -> {
-            log.info("input Message Function = " + accountDTO.toString());
+            log.info("account group = " + accountDTO.toString());
+            return accountDTO;
+        };
+    }
+
+    @Bean
+    public Function<AccountDTO,AccountDTO> accountDetails1(){
+        return accountDTO -> {
+            log.info("message group = " + accountDTO.toString());
             return accountDTO;
         };
     }

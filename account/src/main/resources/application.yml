@@ -18,6 +18,9 @@ spring:
         cardDetails-in-0:
           destination: card-details-link
           group: ${spring.application.name}
+        cardDetails-in-1:
+          destination: card-details-link1
+          group: ${spring.application.name}
         cardDetails1-in-0:
           destination: card-details-1
           group: ${spring.application.name}

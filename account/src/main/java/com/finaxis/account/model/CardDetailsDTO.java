@@ -12,7 +12,6 @@ public record CardDetailsDTO(
         long cardNumber,
         String email,
         String name,
-        ArrayList cards,
-        CardDTO firstCard
+        ArrayList cards
 ) {
 }
